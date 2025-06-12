@@ -3,7 +3,7 @@
 # https://docs.google.com/presentation/d/1aXCCRYnQam-sGmjJX1-kYbpE2raNvtoMX7l6vSspLP4/edit?usp=sharing
 # Todas las sentencias echo simulan ediciones por parte de los autores de los ficheros.
 
-# set -x permite que no se vean las órdenes que se van ejecutando
+# set -x permite que se vean las órdenes que se van ejecutando
 set -x
 
 # Borro los repos
@@ -142,23 +142,18 @@ git commit -m "Anna: Resuelto conflicto en f1.txt automáticamente sin intervenc
 git push
 
 # Muestro el estado final de los repos
+set +x
 echo
 cd ../central
-pwd
+echo "Repo Central"
 git log --oneline --graph --decorate --all
 
 echo
 cd ../anna
-pwd
+echo "Repo Anna"
 git log --oneline --graph --decorate --all
 
 echo
 cd ../beni
-pwd
+echo "Repo Beni"
 git log --oneline --graph --decorate --all
-
-
-
-
-
-
