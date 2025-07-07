@@ -7,7 +7,7 @@
 set -x
 
 # Borro los repos
-rm -rf plantilla central anna beni ceci dani
+rm -rf plantilla central anna beni
 
 # -------------------------------------------------------
 # Creo el repositorio plantilla
